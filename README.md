@@ -2,7 +2,7 @@
 
 2. Implement a method checkout to calculate total cost of a cart of items and apply discounts and coupons as necessary. The checkout method will rely on the consolidate_cart, apply_coupons, and the apply_clearance methods.
 
-The consolidate_cart method
+- The consolidate_cart method
 The cart starts as an array of individual items. Translate it into a hash that includes the counts for each item with the consolidate_cart method.
 
 For instance, if the method is given the array below:
@@ -35,9 +35,9 @@ then apply_coupons should return the following hash:
   "KALE"    => {:price => 3.0, :clearance => false, :count => 1},
   "AVOCADO W/COUPON" => {:price => 5.0, :clearance => true, :count => 1},
 }
-Notice how there were three avocados in the cart, but the coupon only applied to two of them. This left one un-couponed avocado in the cart at $3.00 and one "bundle" of discounted avocados totalling $5.00.
+- Notice how there were three avocados in the cart, but the coupon only applied to two of them. This left one un-couponed avocado in the cart at $3.00 and one "bundle" of discounted avocados totalling $5.00.
 
-The apply_clearance method
+- The apply_clearance method
 This method should discount the price of every item on clearance by twenty percent.
 
 For instance, if this method was given this cart:
@@ -57,10 +57,10 @@ it should return a cart with clearance applied to peanutbutter and soy milk:
 The checkout method
 Create a checkout method that calculates the total cost of the consolidated cart.
 
-When checking out, follow these steps in order:
+- When checking out, follow these steps in order:
 
-Apply coupon discounts if the proper number of items are present.
+- Apply coupon discounts if the proper number of items are present.
 
-Apply 20% discount if items are on clearance.
+- Apply 20% discount if items are on clearance.
 
-If, after applying the coupon discounts and the clearance discounts, the cart's total is over $100, then apply a 10% discount.
+- If, after applying the coupon discounts and the clearance discounts, the cart's total is over $100, then apply a 10% discount.
