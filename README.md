@@ -64,3 +64,7 @@ Create a checkout method that calculates the total cost of the consolidated cart
 - Apply 20% discount if items are on clearance.
 
 - If, after applying the coupon discounts and the clearance discounts, the cart's total is over $100, then apply a 10% discount.
+
+- RESULTS: 
+
+<img width="883" alt="Screen Shot 2020-01-25 at 3 02 38 PM" src="https://user-images.githubusercontent.com/44908424/73127303-cf55e500-3f83-11ea-8172-55326c01872d.png">
