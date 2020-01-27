@@ -37,7 +37,7 @@
 # Create a checkout method that calculates the total cost of the consolidated cart.
 
   def checkout(cart: [], coupons: [])
-    puts cart.inspect
+    # puts cart.inspect === cart
     call_later = cart
     cart = consolidate_cart(cart: cart)
     final_cart = apply_coupons(cart: cart, coupons: coupons)

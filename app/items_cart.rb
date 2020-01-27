@@ -42,18 +42,18 @@ end
 cart = generate_cart
 coupons = generate_coupons
 
-puts "Items in cart".bold
+puts "Items in cart".bold.red
 puts "*" * 20
 cart.each do |item|
 	puts "Item: #{item.keys.first}"
 	puts "Price: #{item[item.keys.first][:price]}"
 	puts "Clearance: #{item[item.keys.first][:clearance]}"
-	puts "=" * 20
+	puts "=".green * 20
 end
 
 puts "Coupons on hand"
 coupons.each do |coupon|
-	puts "Get #{coupon[:item].capitalize} for #{coupon[:cost]} when you by #{coupon[:num]}"
+	puts "SALE! Get #{coupon[:item].capitalize} for #{coupon[:cost]} when you by #{coupon[:num]} !!!".red
 end
 
 puts "Your total is: $".bold.red + "#{checkout(cart: cart, coupons: coupons)}"
